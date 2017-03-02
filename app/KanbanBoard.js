@@ -4,7 +4,7 @@ import List from './List';
 class KanbanBoard extends Component {
   render() {
     return (
-      <div class="app">
+      <div className="app">
         <List id='todo'
               title='To Do'
               cards={this.props.cards.filter(
