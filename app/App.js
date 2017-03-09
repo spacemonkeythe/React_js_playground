@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import KanbanBoard from './KanbanBoard';
 import KanbanBoardContainer from './KanbanBoardContainer';
 // import ContactsAppContainer from './ContactsApp';
+import AnimatedShoppingList from './AnimatedShoppingList';
 
 // let contacts = [
 //     {
@@ -66,6 +67,7 @@ import KanbanBoardContainer from './KanbanBoardContainer';
 //   }
 // ];
 
-render(<KanbanBoardContainer />, document.getElementById('root'));
+//render(<KanbanBoardContainer />, document.getElementById('root'));
 // render(<ContactsApp contacts={contacts} />, document.getElementById('root'));
 // render(<ContactsAppContainer />, document.getElementById('root'));
+render(<AnimatedShoppingList />, document.getElementById('root'));

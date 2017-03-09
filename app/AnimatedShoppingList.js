@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-class AnimatedShoppingList extends {
+class AnimatedShoppingList extends Component{
   constructor() {
     super(...arguments);
 
@@ -19,7 +19,7 @@ class AnimatedShoppingList extends {
     if(evt.key === 'Enter'){
       let newItem = {id:Date.now(), name:evt.target.value}
 
-      let newItems = this.state.items.concat(newItems)
+      let newItems = this.state.items.concat(newItem)
 
       evt.target.value='';
 
@@ -37,9 +37,7 @@ class AnimatedShoppingList extends {
 
   render() {
     let shoppingItems = this.state.items.map((item, i) => (
-      <div key={item.id}
-            className='item'
-            onClick={this.handleRemove.bind(this, i)}>
+      <div key={item.id} className='item' onClick={this.handleRemove.bind(this, i)}>
           {item.name}
       </div>
     ));
